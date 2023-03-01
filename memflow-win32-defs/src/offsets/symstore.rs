@@ -74,7 +74,7 @@ impl Default for SymbolStore {
     fn default() -> Self {
         let cache_dir = cache_dir().expect("unable to get cache directory");
         Self {
-            base_url: "https://msdl.microsoft.com/download/symbols".to_string(),
+            base_url: "http://msdl.microsoft.com/download/symbols".to_string(),
             cache_path: Some(cache_dir.join("memflow")),
         }
     }
